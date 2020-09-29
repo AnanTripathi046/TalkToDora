@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentll"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Skip"
+    android:textAllCaps="false"
+    android:id="@+id/skip"
+    android:layout_gravity="end"
+    android:textColor="@color/lightblue"
+    style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dotcontainer"
+        android:orientation="horizontal"/>
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:id="@+id/getStarted"
+        android:backgroundTint="@color/lightblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
