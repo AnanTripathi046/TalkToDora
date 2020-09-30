@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SplashScreen">
+
     <LinearLayout
-        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:id="@+id/ll"
         android:layout_width="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_height="wrap_content">
-<ImageView
-    android:layout_width="60dp"
-    android:layout_height="60dp"
-    android:layout_gravity="center_vertical"
-    android:src="@drawable/talktodoralogo"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/talktodoralogo" />
+
         <TextView
+            android:id="@+id/splashtv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:textSize="40sp"
             android:textStyle="bold"
-            tools:text="talktodora"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/splashtv"/>
+            tools:text="talktodora" />
     </LinearLayout>
+
     <ImageView
+        app:layout_constraintTop_toBottomOf="@id/ll"
+        android:id="@+id/imageView2"
+        app:layout_constrainedHeight="true"
+        android:layout_margin="3dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/support"/>
-</LinearLayout>
+        android:src="@drawable/support"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

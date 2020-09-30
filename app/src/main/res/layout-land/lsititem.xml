@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_marginBottom="20dp"
     android:layout_height="match_parent">
 
     <ImageView
@@ -29,7 +28,6 @@
         android:textStyle="bold"
         tool:layout_constraintBottom_toTopOf="@id/listtext"
         tool:layout_constraintEnd_toEndOf="parent"
-        tool:layout_constraintHorizontal_bias="0.0"
         tool:layout_constraintStart_toStartOf="parent"
         tool:layout_constraintTop_toBottomOf="@id/liimage" />
 
@@ -40,6 +38,7 @@
         android:gravity="center"
         android:textColor="@color/grey"
         android:textSize="20sp"
+        android:layout_marginHorizontal="8dp"
         tool:layout_constraintTop_toBottomOf="@id/textView3"
         tool:layout_constraintEnd_toEndOf="parent"
         tool:layout_constraintStart_toStartOf="parent"
